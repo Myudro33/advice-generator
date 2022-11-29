@@ -20,7 +20,6 @@ const App = () => {
   const reload = () => {
     window.location.reload(true);
   };
-
   return (
     <Container
       maxWidth="xl"
@@ -53,7 +52,7 @@ const App = () => {
         )}
 
         <Typography
-          variant="h5"
+          variant={data?.advice.length>60?'p':'h5'}
           color={"white"}
           fontWeight={800}
           textAlign="center"
